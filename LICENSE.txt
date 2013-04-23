@@ -1,4 +1,4 @@
-Copyright (c) 2013 Junya Ogura
+Copyright (c) 2013 Junya Ogura and QNYP, LLC.
 
 MIT License
 

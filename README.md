@@ -1,6 +1,6 @@
 # Middleman::S3Metadata
 
-TODO: Write a gem description
+This gem automates updating metadata of specific AWS S3 object.
 
 ## Installation
 
@@ -18,7 +18,31 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You need to add the following code to your config.rb file:
+
+```ruby
+activate :s3_metadata do |config|
+  config.bucket                = 'my.bucket.com' # The name of the S3 bucket you are targetting. This is globally unique.
+  config.region                = 'us-west-1'     # The AWS region for your bucket.
+  config.aws_access_key_id     = 'AWS KEY ID'
+  config.aws_secret_access_key = 'AWS SECRET KEY'
+  config.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
+end
+```
+
+The `s3_metadata` method set a metadata for S3 object:
+
+```ruby
+s3_metadata('feeds/feed.rss', 'Content-Type', 'rss/xml')
+s3_metadata('archives.tar.gz', 'Content-Type', 'application/x-gzip')
+```
+
+First argument is key for S3 object, second and third arguments is key and value for metadata.
+
+## A Debt of Gratitude
+
+I used middleman-sync and middleman-s3_redirect as a template for building a Middleman extension.
+My gratitude goes to @karlfreeman and @fredjean.
 
 ## Contributing
 
