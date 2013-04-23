@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['junyaogura@gmail.com']
   spec.description   = %q{Set Content-Type metadata for S3 objects after syncing.}
   spec.summary       = %q{Set Content-Type metadata for S3 objects after syncing.}
-  spec.homepage      = 'https://github.com/juno/middleman-s3_metadata'
+  spec.homepage      = 'https://github.com/qnyp/middleman-s3_metadata'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
