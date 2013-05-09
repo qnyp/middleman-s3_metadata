@@ -2,6 +2,11 @@
 
 This gem automates updating metadata of specific AWS S3 object.
 
+Use case:
+
+* Set suitable `Content-Type` for RSS file
+* Remove 'Cache-Control' and 'Expires' header to disable strong caching
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -33,8 +38,13 @@ end
 The `s3_metadata` method set a metadata for S3 object:
 
 ```ruby
+# Set suitable Content-Type
 s3_metadata('feeds/feed.rss', 'Content-Type', 'rss/xml')
 s3_metadata('archives.tar.gz', 'Content-Type', 'application/x-gzip')
+
+# Disable caching
+s3_metadata('index.html', 'Cache-Control', nil)
+s3_metadata('index.html', 'Expires', nil)
 ```
 
 First argument is key for S3 object, second and third arguments is key and value for metadata.
