@@ -2,7 +2,12 @@
 
 ## dev
 
-[full changelog](http://github.com/qnyp/middleman-s3_metadata/compare/v0.1.1...master)
+[full changelog](http://github.com/qnyp/middleman-s3_metadata/compare/v0.1.2...master)
+
+## 0.1.2 / 2013-05-09
+
+* Fix message when unset metadata
+* Add 'Disable caching' use case to README.md
 
 ## 0.1.1 / 2013-04-23
 
