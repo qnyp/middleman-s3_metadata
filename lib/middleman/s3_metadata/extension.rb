@@ -63,7 +63,11 @@ module Middleman
 
       def generate
         options.mappings.each do |mapping|
-          puts "Set metadata for '/#{mapping.object}' with '#{mapping.key}' => '#{mapping.value}'"
+          if mapping.value.nil?
+            puts "Unset metadata for '/#{mapping.object}' with '#{mapping.key}'"
+          else
+            puts "Set metadata for '/#{mapping.object}' with '#{mapping.key}' => '#{mapping.value}'"
+          end
           file = s3_files.find { |i| i.key == mapping.object }
           file.reload
           file.metadata = { mapping.key => mapping.value }
