@@ -1,5 +1,7 @@
 # Middleman::S3Metadata
 
+[![Code Climate](https://codeclimate.com/github/qnyp/middleman-s3_metadata.png)](https://codeclimate.com/github/qnyp/middleman-s3_metadata)
+
 This gem automates updating metadata of specific AWS S3 object.
 
 Use case:
