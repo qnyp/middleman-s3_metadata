@@ -9,6 +9,11 @@ Use case:
 * Set suitable `Content-Type` for RSS file
 * Remove 'Cache-Control' and 'Expires' header to disable strong caching
 
+## Compatibility
+
+* middleman-s3_metadata 0.2.x is for Middleman 4.x
+* middleman-s3_metadata 0.1.x is for Middleman 3.x
+
 ## Installation
 
 Add this line to your application's Gemfile:
