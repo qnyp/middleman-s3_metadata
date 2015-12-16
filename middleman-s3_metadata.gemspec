@@ -6,7 +6,7 @@ require 'middleman/s3_metadata/version'
 Gem::Specification.new do |spec|
   spec.name          = 'middleman-s3_metadata'
   spec.version       = Middleman::S3Metadata::VERSION
-  spec.authors       = ['Junya Ogura', 'QNYP, LLC.']
+  spec.authors       = ['Junya Ogura']
   spec.email         = ['junyaogura@gmail.com']
   spec.description   = %q{Set Content-Type metadata for S3 objects after syncing.}
   spec.summary       = %q{Set Content-Type metadata for S3 objects after syncing.}
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'middleman-core', '>= 3.0.0'
+  spec.add_runtime_dependency 'middleman-core', '~> 3.0'
   spec.add_runtime_dependency 'fog'
 
   spec.add_development_dependency 'bundler', '~> 1.3'
