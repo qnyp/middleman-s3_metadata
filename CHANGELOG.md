@@ -4,6 +4,10 @@
 
 [full changelog](http://github.com/qnyp/middleman-s3_metadata/compare/v0.1.2...master)
 
+## 0.2.0 / 2016-03-29
+
+* Upgrade middleman-core to 4.x
+
 ## 0.1.3 / 2015-12-16
 
 * Fix runtime middleman-core version to 3.x
